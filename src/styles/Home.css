@@ -1,0 +1,138 @@
+.home-page {
+    background-color: #2c3e50;
+    height: 100vh;
+    max-height: 100%;
+    width: 100%;
+}
+
+.outer-headings {
+    min-height: 100vh; /* Ensures container takes at least 100vh */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0; /* Adjust padding to avoid overflow */
+}
+
+.inner-headings {
+    border: 0px solid #ddd;
+    height: 80px; /* Slightly smaller height */
+    line-height: 80px; /* Adjust line-height accordingly */
+    font-size: 90px; /* Slightly smaller font size */
+    text-transform: uppercase;
+    overflow: hidden;
+    padding-left: 8%;
+    font-family: 'raleway', sans-serif;
+}
+
+.inner-headings span {
+    position: relative;
+    color: #ECF0F1;
+    animation: animation 8s ease infinite;
+}
+
+@keyframes animation {
+    0%, 
+    100% {
+        top: 0;
+    }
+    20% {
+        top: 0;
+    }
+    25% {
+        top: -80px; /* Adjust for new text size */
+    }
+    45% {
+        top: -80px;
+    }
+    50% {
+        top: -160px; /* Adjust for new text size */
+    }
+    70% {
+        top: -160px;
+    }
+    75% {
+        top: -240px; /* Adjust for new text size */
+    }
+    95% {
+        top: -240px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .outer-headings {
+        padding-bottom: 150px; /* Reduce padding */
+    }
+    .inner-headings {
+        height: 60px; /* Reduce height */
+        line-height: 60px; /* Adjust line-height */
+        font-size: 70px; /* Smaller font size */
+        padding-left: 5%; /* Adjust padding for smaller screens */
+    }
+    @keyframes animation {
+        0%, 100% {
+            top: 0;
+        }
+        20% {
+            top: 0;
+        }
+        25% {
+            top: -60px; /* Adjust for smaller text size */
+        }
+        45% {
+            top: -60px;
+        }
+        50% {
+            top: -120px; /* Adjust for smaller text size */
+        }
+        70% {
+            top: -120px;
+        }
+        75% {
+            top: -180px; /* Adjust for smaller text size */
+        }
+        95% {
+            top: -180px;
+        }
+    }
+}
+
+/* Responsive adjustments for mobile devices (480px and below) */
+@media screen and (max-width: 480px) {
+    .outer-headings {
+        padding-bottom: 100px; /* Further reduce padding */
+    }
+    .inner-headings {
+        height: 50px; /* Reduce height more for smaller screens */
+        line-height: 50px; /* Adjust line-height */
+        font-size: 50px; /* Smaller font size for mobile */
+        padding-left: 3%; /* Adjust padding for smaller screens */
+    }
+    @keyframes animation {
+        0%, 100% {
+            top: 0;
+        }
+        20% {
+            top: 0;
+        }
+        25% {
+            top: -50px; /* Adjust for smaller text size */
+        }
+        45% {
+            top: -50px;
+        }
+        50% {
+            top: -100px; /* Adjust for smaller text size */
+        }
+        70% {
+            top: -100px;
+        }
+        75% {
+            top: -150px; /* Adjust for smaller text size */
+        }
+        95% {
+            top: -150px;
+        }
+    }
+}

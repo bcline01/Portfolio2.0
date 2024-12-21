@@ -1,10 +1,19 @@
 import React from 'react';
+import '../styles/Home.css';
 
 const Home: React.FC = () => {
     return (
         <><div id='section1' className='home-page'>
-            <h1>Welcome to My Portfolio</h1>
-            <p>This is the home page of my portfolio website.</p>
+            <div className='outer-headings'>
+                <div className='inner-headings'>
+                <span>
+              Full-Stack Developer <br />
+              Creator <br />
+              Animator <br />
+              Designer <br />
+            </span>
+          </div>
+      </div>
         </div>
             <section id="section2">
                 {/* <AboutMe /> */}
