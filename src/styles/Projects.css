@@ -1,0 +1,45 @@
+.project-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.project-heading {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* OwlCarousel item styling */
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Styling for the images */
+.item-image {
+  width: 80%; /* Adjust the width of the image */
+  max-width: 300px; /* Optional: to prevent the image from getting too large */
+  height: auto;
+  object-fit: contain; /* Keeps the aspect ratio intact */
+  margin-bottom: 15px; /* Adds space below the image */
+  border-radius: 8px;
+}
+
+/* Styling for the title */
+.item-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #333; /* You can adjust the color */
+}
+
+/* Styling for the description */
+.item-description {
+  font-size: 1rem;
+  color: #666;
+  max-width: 80%; /* Limit the description width */
+  margin: 0 auto; /* Center the text */
+}

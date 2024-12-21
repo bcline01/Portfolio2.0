@@ -1,13 +1,18 @@
+
+
 .home-page {
     position: relative;
     height: 100vh;
-    max-height: 100%;
     width: 100%;
-    overflow: hidden;
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center; */
+    overflow-y: auto; /* Allow vertical scrolling */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+#section2 {
+    min-height: 100vh; /* Ensures section2 takes full viewport height */
+    padding: 20px;
+    background-color: lightgray; /* Temporary background color for visibility */
+    color: black; /* Ensure text is readable */
 }
 
 .video-background {
