@@ -4,16 +4,17 @@ import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 
-import BookHub from '../assets/BookHub.png';
+import BookHub from '../assets/BookHub2.png';
 import BookShelf from '../assets/bookshelf2.png';
 import Candidate from '../assets/candidate2.png';
 import Ecommerce from '../assets/Ecommerce.png';
 import Google from '../assets/googlesearch2.png';
 import Kanban from '../assets/kanban2.png';
-import Postgress from '../assets/kanban2.png';
+import Postgress from '../assets/postgres2.png';
 import PP from '../assets/pp2.png';
 import Doc from '../assets/spineImg2.png';
 import TakeOut from '../assets/TakeoutMENU.png';
+import '../styles/Projects.css';
 
 
   // Options for the Owl Carousel
@@ -54,18 +55,22 @@ const Projects: React.FC = () => {
 
   return (
     <div className="project-container">
-      <h2 className="project-heading">My Projects</h2>
+      <div className="project-heading">My Projects</div>
+      {/* <div className='project-item-container'> */}
       <OwlCarousel className="owl-theme" {...options}>
         {projects.map((project) => (
           <div className="item" key={project.id}>
             <img src={project.image} alt={project.title} className="item-image" />
-            <h4 className="item-title">{project.title}</h4>
+            <div className="item-title">{project.title}</div>
             <p className="item-description">{project.description}</p>
             </div>
+            
           
         ))}
       </OwlCarousel>
     </div>
+    // </div>
+    
   );
 };
 

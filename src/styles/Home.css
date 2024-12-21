@@ -11,7 +11,7 @@
 #section2 {
     min-height: 100vh; /* Ensures section2 takes full viewport height */
     padding: 20px;
-    background-color: lightgray; /* Temporary background color for visibility */
+    background-color: white; /* Temporary background color for visibility */
     color: black; /* Ensure text is readable */
 }
 
