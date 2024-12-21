@@ -1,36 +1,56 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import '../styles/Home.css';
+import Video from '../assets/video.mp4'
+import ScrollIndicator from '../components/ScrollIndicator';
 
 const Home: React.FC = () => {
+    const [showIndicator, setShowIndicator] = useState(true);  // State to control visibility of scroll indicator
+
+    useEffect(() => {
+        // Scroll event listener
+        const handleScroll = () => {
+            // Get the position of section2
+            const section2 = document.getElementById('section2');
+            if (section2) {
+                const rect = section2.getBoundingClientRect();
+                // If section2 is in the viewport (its top is greater than the screen height), hide the indicator
+                if (rect.top <= window.innerHeight) {
+                    setShowIndicator(false);  // Hide indicator when section2 is visible
+                } else {
+                    setShowIndicator(true);   // Show indicator when section2 is not yet visible
+                }
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);  // Attach scroll event listener
+
+        // Clean up the event listener when the component is unmounted
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
     return (
-        <><div id='section1' className='home-page'>
-            <div className='outer-headings'>
-                <div className='inner-headings'>
+        <div id="section1" className="home-page">
+        {/* Video Background */}
+        <video autoPlay muted loop className="video-background">
+            <source src={Video} type="video/mp4" />
+        </video>
+        
+        <div className="outer-headings">
+            <div className="inner-headings">
                 <span>
-              Full-Stack Developer <br />
-              Creator <br />
-              Animator <br />
-              Designer <br />
-            </span>
-          </div>
-      </div>
+                    Developer <br />
+                    Creator <br />
+                    Animator <br />
+                    Designer <br />
+                </span>
+            </div>
         </div>
-            <section id="section2">
-                {/* <AboutMe /> */}
-            </section>
-            <section id="section3">
-                {/* <Projects /> */}
-            </section>
-            <section id="section4">
-                {/* <ContactMe /> */}
-            </section>
-            <section id="section5">
-                {/* <Resume /> */}
-            </section>
-            <section id="section6">
-                {/* <Footer /> */}
-            </section>
-        </>
+        {showIndicator && <ScrollIndicator />} 
+        <div id="section2">
+                {/* Section 2 content */}
+            </div>
+        </div>
 
     );
 };
