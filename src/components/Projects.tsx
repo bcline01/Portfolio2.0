@@ -41,16 +41,16 @@ const Projects: React.FC = () => {
 
 
   const projects = [
-    { id: 1, image: BookHub, title: 'Project 1', description: 'Description of Project 1' },
-    { id: 2, image: BookShelf, title: 'Project 2', description: 'Description of Project 2' },
-    { id: 3, image: Candidate, title: 'Project 3', description: 'Description of Project 3' },
-    { id: 4, image: Ecommerce, title: 'Project 4', description: 'Description of Project 4' },
-    { id: 5, image: Google, title: 'Project 5', description: 'Description of Project 5' },
-    { id: 6, image: Kanban, title: 'Project 6', description: 'Description of Project 6' },
-    { id: 7, image: Postgress, title: 'Project 7', description: 'Description of Project 7' },
-    { id: 8, image: PP, title: 'Project 8', description: 'Description of Project 8' },
-    { id: 9, image: Doc, title: 'Project 9', description: 'Description of Project 9' },
-    { id: 10, image: TakeOut, title: 'Project 10', description: 'Description of Project 10' },
+    { id: 1, image: BookHub, title: 'BookHub-Full Stack', description: 'HTML, CSS, Typescript, Bootstrap, GraphQL, MERN, Bcrypt, JWT, Cypress, GitHub Actions' },
+    { id: 2, image: BookShelf, title: 'BookShelf-Full Stack', description: 'HTML, CSS, Typescript, Bcrypt, JWT, Sequelize, Axios, React, Bootstrap'},
+    { id: 3, image: Candidate, title: 'Candidate Search-Front End', description: 'HTML, CSS, Bootstrap, Typescript, Node.JS, React, Sequelize' },
+    { id: 4, image: Ecommerce, title: 'Ecommerce- Front End', description: 'HTML, Tailwind, Angular, SCSS' },
+    { id: 5, image: Google, title: 'Google Books-Full Stack', description: 'HTML, CSS, Bootstrap,React, Node, Express, Typescript, bcrypt, JWT, MongoDB, GraphQL' },
+    { id: 6, image: Kanban, title: 'Kanban Board-Full Stack', description: 'HTML, CSS, Typescript, Node.JS, React, postgresSQL, Express.JS, JWT, Bcrypt' },
+    { id: 7, image: Postgress, title: 'Postgres APP-Back End', description: 'HTML, Typescript, Node.JS, PostgresSQL, Inquierer' },
+    { id: 8, image: PP, title: 'Puzzle Pairs-Front End', description: 'HTML, CSS, JavaScript, React, Bootstrap, Framer-Motion' },
+    { id: 9, image: Doc, title: 'Chiropractic Website-Front End', description: 'HTML, CSS, React, Typescript, JQuery, Node, Bootstrap, ' },
+    { id: 10, image: TakeOut, title: 'Take Out Menu-Back End', description: 'Python3' },
   ];
 
   return (

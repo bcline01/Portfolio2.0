@@ -94,6 +94,7 @@
   max-width: 80%;
   margin: 0 auto; /* Center the description */
   text-align: center;
+  font-family: 'raleway', sans-serif;
 }
 .owl-dot {
   background-color: black; /* Black color for inactive dots */
