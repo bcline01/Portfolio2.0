@@ -65,7 +65,14 @@
   height: 100%;
 }
 
-/* Styling for images: Centered and responsive */
+.item-link {
+  width: 100%; /* Ensures the <a> tag fills the width of the parent */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 .item-image {
   width: 100%; /* Adjust the width to control image size */
   max-width: 20%; /* Optional: prevent the image from getting too large */

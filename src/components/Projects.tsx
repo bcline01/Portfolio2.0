@@ -41,16 +41,25 @@ const Projects: React.FC = () => {
 
 
   const projects = [
-    { id: 1, image: BookHub, title: 'BookHub-Full Stack', description: 'HTML, CSS, Typescript, Bootstrap, GraphQL, MERN, Bcrypt, JWT, Cypress, GitHub Actions' },
-    { id: 2, image: BookShelf, title: 'BookShelf-Full Stack', description: 'HTML, CSS, Typescript, Bcrypt, JWT, Sequelize, Axios, React, Bootstrap'},
-    { id: 3, image: Candidate, title: 'Candidate Search-Front End', description: 'HTML, CSS, Bootstrap, Typescript, Node.JS, React, Sequelize' },
-    { id: 4, image: Ecommerce, title: 'Ecommerce- Front End', description: 'HTML, Tailwind, Angular, SCSS' },
-    { id: 5, image: Google, title: 'Google Books-Full Stack', description: 'HTML, CSS, Bootstrap,React, Node, Express, Typescript, bcrypt, JWT, MongoDB, GraphQL' },
-    { id: 6, image: Kanban, title: 'Kanban Board-Full Stack', description: 'HTML, CSS, Typescript, Node.JS, React, postgresSQL, Express.JS, JWT, Bcrypt' },
-    { id: 7, image: Postgress, title: 'Postgres APP-Back End', description: 'HTML, Typescript, Node.JS, PostgresSQL, Inquierer' },
-    { id: 8, image: PP, title: 'Puzzle Pairs-Front End', description: 'HTML, CSS, JavaScript, React, Bootstrap, Framer-Motion' },
-    { id: 9, image: Doc, title: 'Chiropractic Website-Front End', description: 'HTML, CSS, React, Typescript, JQuery, Node, Bootstrap, ' },
-    { id: 10, image: TakeOut, title: 'Take Out Menu-Back End', description: 'Python3' },
+    { id: 1, image: BookHub, title: 'BookHub-Full Stack', description: 'HTML, CSS, Typescript, Bootstrap, GraphQL, MERN, Bcrypt, JWT, Cypress, GitHub Actions', link: 'https://github.com/bcline01/The-Book-Hub' },
+
+    { id: 2, image: BookShelf, title: 'BookShelf-Full Stack', description: 'HTML, CSS, Typescript, Bcrypt, JWT, Sequelize, Axios, React, Bootstrap', link: 'https://github.com/bcline01/BookShelf'},
+
+    { id: 3, image: Candidate, title: 'Candidate Search-Front End', description: 'HTML, CSS, Bootstrap, Typescript, Node.JS, React, Sequelize', link:'https://github.com/bcline01/candidate-search' },
+
+    { id: 4, image: Ecommerce, title: 'Ecommerce- Front End', description: 'HTML, Tailwind, Angular, SCSS', link: 'https://github.com/bcline01/e-commerce-app' },
+
+    { id: 5, image: Google, title: 'Google Books-Full Stack', description: 'HTML, CSS, Bootstrap,React, Node, Express, Typescript, bcrypt, JWT, MongoDB, GraphQL', link: 'https://github.com/bcline01/googleBooks?tab=readme-ov-file'},
+
+    { id: 6, image: Kanban, title: 'Kanban Board-Full Stack', description: 'HTML, CSS, Typescript, Node.JS, React, postgresSQL, Express.JS, JWT, Bcrypt', link: 'https://github.com/bcline01/kanban-board' },
+
+    { id: 7, image: Postgress, title: 'Postgres APP-Back End', description: 'HTML, Typescript, Node.JS, PostgresSQL, Inquierer', link: 'https://github.com/bcline01/employee_tracker' },
+
+    { id: 8, image: PP, title: 'Puzzle Pairs-Front End', description: 'HTML, CSS, JavaScript, React, Bootstrap, Framer-Motion', link:'https://github.com/bcline01/Puzzlepairs' },
+
+    { id: 9, image: Doc, title: 'Chiropractic Website-Front End', description: 'HTML, CSS, React, Typescript, JQuery, Node, Bootstrap,', link: 'https://github.com/bcline01/doc-site' },
+
+    { id: 10, image: TakeOut, title: 'Take Out Menu-Back End', description: 'Python3', link: 'https://github.com/bcline01/takeout-menu' },
   ];
 
   return (
@@ -61,7 +70,9 @@ const Projects: React.FC = () => {
       <OwlCarousel className="owl-theme" {...options}>
         {projects.map((project) => (
           <div className="item" key={project.id}>
+            <a className='item-link' href={project.link} target="_blank" rel="noopener noreferrer">
             <img src={project.image} alt={project.title} className="item-image" />
+            </a>
             <div className="item-title">{project.title}</div>
             <p className="item-description">{project.description}</p>
             </div>
