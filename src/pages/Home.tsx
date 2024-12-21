@@ -3,6 +3,7 @@ import '../styles/Home.css';
 import Video from '../assets/video.mp4'
 import ScrollIndicator from '../components/ScrollIndicator';
 import Projects from '../components/Projects';
+import About from '../components/About';
 
 const Home: React.FC = () => {
     const [showIndicator, setShowIndicator] = useState(true);  // State to control visibility of scroll indicator
@@ -49,9 +50,12 @@ const Home: React.FC = () => {
         </div>
         {showIndicator && <ScrollIndicator />} 
         <div id="section2">
-                <Projects />
+            <About />
             </div>
+            <div id="section3">
+                <Projects />
         </div>
+    </div>
 
     );
 };

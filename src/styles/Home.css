@@ -8,10 +8,10 @@
     overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
-#section2 {
+#section3 {
     min-height: 100vh; /* Ensures section2 takes full viewport height */
     padding: 20px;
-    background-color: white; /* Temporary background color for visibility */
+    background-color: #f2f3f4; /* Temporary background color for visibility */
     color: black; /* Ensure text is readable */
 }
 
