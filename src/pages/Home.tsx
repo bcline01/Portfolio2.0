@@ -48,7 +48,7 @@ const Home: React.FC = () => {
         </div>
         {showIndicator && <ScrollIndicator />} 
         <div id="section2">
-                {/* Section 2 content */}
+                {/* <Projects /> */}
             </div>
         </div>
 
