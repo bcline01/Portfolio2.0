@@ -8,6 +8,10 @@
     color: #87adc6; /* Change color on hover */
 }
 
+.contact-icon:active {
+    color: #333; /* Revert to default color on click */
+}
+
 .work {
     font-family: 'raleway', sans-serif; /* Set font family */
     font-size: 1.5rem;

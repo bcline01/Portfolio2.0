@@ -25,14 +25,22 @@
 .nav-contact-icon:hover {
     color: #87adc6; /* LinkedIn blue on hover */
 }
-
-.high-contrast {
-    background-color: black !important;
-    color: white !important;
+.nav-contact-icon:active {
+    color: rgb(68, 66, 66);
 }
 
+.high-contrast {
+    background-color: #333333!important;
+    color: white !important;
+}
+.high-contrast .welcome {
+    color: white !important;
+}
+.high-contrast .owl-theme .owl-dots .owl-dot.active span{
+    background-color: white !important;
+}
 .high-contrast .my-projects {
-    background-color: black !important;
+    background-color: rgb(30, 30, 30) !important;
 }
 .high-contrast .project-heading {
     color: white !important;

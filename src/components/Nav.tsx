@@ -2,14 +2,22 @@ import React, { useEffect, useState } from 'react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import '../styles/Nav.css';
 import { WiMoonAltWaxingCrescent2 } from "react-icons/wi";
+import { GoSun } from "react-icons/go";
+
 
 
 const Nav: React.FC = () => {
     const [highContrast, setHighContrast] = useState(false);
+    const [isSun, setIsSun] = useState(false);
+    
+    const toggleIcon = () => {
+        setIsSun(prevState => !prevState);
+    }
 
     // Toggle high contrast mode
     const toggleHighContrast = () => {
         setHighContrast(prevState => !prevState);
+        toggleIcon();
     };
 
     // Apply or remove high-contrast class to body element
@@ -25,7 +33,7 @@ const Nav: React.FC = () => {
     return (
         <nav className="nav-container">
             <div className='nav-contact-icon' onClick={toggleHighContrast}>
-            <WiMoonAltWaxingCrescent2 size={40} />
+            {isSun ? <GoSun size={40} /> : <WiMoonAltWaxingCrescent2 size={40} />}
 
             </div>
             {/* GitHub link */}

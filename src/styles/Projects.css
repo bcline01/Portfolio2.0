@@ -105,7 +105,7 @@
 
 /* Optional: To make active dot color black as well, remove the .active style */
 .owl-dot.active {
-  background-color: black; /* Keep the active dot black */
+  background-color: white; /* Keep the active dot black */
 }
 
 .owl-theme .owl-dots .owl-dot.active span {
