@@ -5,6 +5,7 @@ import ScrollIndicator from '../components/ScrollIndicator';
 import Projects from '../components/Projects';
 import About from '../components/About';
 import Contact from '../components/Contact';
+import Nav from '../components/Nav';
 
 const Home: React.FC = () => {
     const [showIndicator, setShowIndicator] = useState(true);  // State to control visibility of scroll indicator
@@ -50,6 +51,8 @@ const Home: React.FC = () => {
             </div>
         </div>
         {showIndicator && <ScrollIndicator />} 
+        <Nav /> 
+
         <div id="section2">
             <About />
             </div>

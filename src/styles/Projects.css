@@ -1,4 +1,14 @@
 /* Ensuring the entire project container is centered */
+.my-projects {
+  
+    min-height: 100vh; /* Ensures section2 takes full viewport height */
+    padding: 20px;
+    background-color: #f2f3f4; /* Temporary background color for visibility */
+    color: black; /* Ensure text is readable */
+}
+
+
+
 .project-container {
   padding: 20px;
   display: flex;
@@ -100,5 +110,39 @@
 
 .owl-theme .owl-dots .owl-dot.active span {
   background-color: black;
+}
+
+@media (max-width: 480px) {
+  .project-heading {
+    font-size: 3.5rem;
+  }
+
+  .item-title {
+    font-size: 2.5rem;
+  }
+
+  .item-description {
+    font-size: 1.5rem;
+  }
+  .item-image {
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .project-heading {
+    font-size: 4rem;
+  }
+
+  .item-title {
+    font-size: 2.5rem;
+  }
+
+  .item-description {
+    font-size: 1.5rem;
+  }
+  .item-image {
+    max-width: 40%;
+  }
 }
 

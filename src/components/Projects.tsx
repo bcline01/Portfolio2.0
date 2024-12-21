@@ -54,6 +54,7 @@ const Projects: React.FC = () => {
   ];
 
   return (
+    <div className='my-projects'>
     <div className="project-container">
       <div className="project-heading">My Projects</div>
       {/* <div className='project-item-container'> */}
@@ -69,7 +70,8 @@ const Projects: React.FC = () => {
         ))}
       </OwlCarousel>
     </div>
-    // </div>
+    </div>
+    
     
   );
 };

@@ -16,3 +16,27 @@
     letter-spacing: 2px;
     text-transform: uppercase;
 }
+
+@media (max-width: 480px) {
+    .welcome {
+        font-size: 4rem;
+        justify-content: center;
+        display: flex;
+    }
+}
+
+@media (min-width: 738px) {
+    .welcome {
+        font-size: 3rem;
+        justify-content: center;
+        display: flex;
+    }
+}
+
+@media (min-width: 1026px) {
+    .welcome {
+        font-size: 5rem;
+        justify-content: center;
+        display: flex;
+    }
+}
